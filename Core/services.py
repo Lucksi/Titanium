@@ -13,7 +13,7 @@ class Services:
         os.system("cls" if os.name == "nt" else "clear")
         print(Font.Color.YELLOW + "**************************************************************")
         print(Font.Color.GREEN + banner)
-        print(Font.Color.WHITE + "JUST A SIMPLE SOCIAL ENGIGNERING TOOL:)     CODED BY LUCKSI")
+        print(Font.Color.WHITE + "A SIMPLE SOCIAL ENGINEERING TOOL:)     CODED BY LUCKSI")
         print(
             Font.Color.YELLOW + "Instagram:lucks_022\nEMAIL:lukege287@gmail.com\nGIT-HUB:Lucksi\nWebsite:https://sosuke.altervista.org")
         print("**************************************************************")

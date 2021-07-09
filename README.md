@@ -13,6 +13,3 @@
    # ♦️EXECUTION:
          🍀cd Titanium 
          🍀sudo python3 Titanium.py 
-   # ♦️DEFAULT-CREDENTIALS:
-         🍀Username:Admin
-         🍀Password:qwerty123  
