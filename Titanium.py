@@ -68,22 +68,22 @@ def Main():
         try:
             scel = input(
                 Font.Color.GREEN + "[*INSERT AN OPTION:*]" + Font.Color.WHITE + "\n(A)PHISHING-MODE(AVAIABLE)\n(B)SERVICES-MODE(AVAIABLE)\n(C)CAMPAIGN-MODE(AVAIABLE)\n(D)CONFIGURATION-FILE\n(E)UPDATE\n(F)EXIT" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->")
-            # PHISHING #
+            
             if scel == "a" or scel == "A":
                 phishing.Phishing.main()
-            # SERVICES-MODE #
+            
             elif scel == "b" or scel == "B":
                 services.Services.main()
-            # MAILER-MODE #
+            
             elif scel == "c" or scel == "C":
                 campaign.Campaign.main()
-            # TITANIUM-SERVER #
+            
             elif scel == "d" or scel == "D":
                 config.Config.main()          
-            # CONFIGURATION-MODE #
+            
             elif scel == "e" or scel == "E":
                 os.system("Core/./update.sh")
-            # UPDATE #
+            
             elif scel == "f" or scel == "F":
                 print(Font.Color.GREEN + "\nTHANKS FOR HAVE USED TITANIUM,HAVE A NICE DAY:)")
                 exit()
