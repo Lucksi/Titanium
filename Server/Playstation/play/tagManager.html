@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body>
+
+    <script type="text/javascript" src="tagManager_data/tag"></script><script id="SIGNAL" async="" src="tagManager_data/tag.js"></script><script type="text/javascript" src="tagManager_data/jquery.js"></script>
+    <script>
+      // Fallback -- googleapis is blocked in China
+       window.jQuery || document.write('<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"><\/script>');
+    </script>
+    <script type="text/javascript">
+    (function() {
+      window.fireTag = function(eventType, action) {
+        // Clear the ubersandbox div
+        $('#ubersandbox').empty()
+        if (action) {
+          jQuery("body").trigger({
+            type: eventType,
+            action: action
+          });
+        }
+        else {
+          jQuery("body").trigger({
+            type: eventType
+          });
+        }
+      };
+    })();
+    </script>
+
+    <!-- Set the ubersandbox div, which is cleared on page turns -->
+    <div id="ubersandbox" style="position: absolute; top: -10000px; height: 0px; width: 0px; display:none;"></div>
+
+  <script type="text/javascript">var _cf = _cf || []; _cf.push(['_setFsp', true]);  _cf.push(['_setBm', true]);  _cf.push(['_setAu', '/clientlibs/32220e8feno175d77f961d5da2af28f']); </script><script type="text/javascript" src="32220e8feno175d77f961d5da2af28f.js"></script>
+</body></html>
