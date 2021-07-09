@@ -39,7 +39,7 @@ def check_root():
     if os.getuid() != 0:
         os.system("cls" if os.name == "nt" else "clear")
         agree_banner()
-        print(Font.Color.RED + "JUST A SIMPLE SOCIAL ENGIGNERING TOOL:)      CODED BY LUCKSI\n")
+        print(Font.Color.RED + "A SIMPLE SOCIAL ENGINEERING TOOL:)  CODED BY LUCKSI\n")
         print("YOU MUST EXECUTE THIS PROGRAM AS ROOT TRY TO USE IT WITH SUDO:)")
         exit()
     else:
