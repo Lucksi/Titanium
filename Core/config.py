@@ -26,17 +26,17 @@ class Config:
     @staticmethod
     def modify_recipient():
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR RECIPIENT EMAIL?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR RECIPIENT EMAIL?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             os.chdir(dest)
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 recipient = str(input(
-                    Font.Color.WHITE + "\nINSERT THE EMAIL-RECIPIENT" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + "\nINSERT THE EMAIL-RECIPIENT" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
                 while recipient == "":
                     recipient = str(input(
-                        Font.Color.RED + "\n[!]" + Font.Color.WHITE + "INSERT AN EMAIL" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.RED + "\n[!]" + Font.Color.WHITE + "INSERT AN EMAIL" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
                 else:
                     Parser.set("Smtp","Email",recipient)
                     with open(nomefile, 'w') as configfile:
@@ -51,17 +51,17 @@ class Config:
     @staticmethod
     def modify_password():
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR RECIPIENT-EMAIL-PASSWORD?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR RECIPIENT-EMAIL-PASSWORD?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             os.chdir(dest)
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 passw = getpass.getpass(
-                    Font.Color.WHITE + "\nINSERT THE PASSWORD-RECIPIENT" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->")
+                    Font.Color.WHITE + "\nINSERT THE PASSWORD-RECIPIENT" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->")
                 while passw == "":
                     passw = getpass.getpass(
-                        Font.Color.RED + "\n[!]" + Font.Color.WHITE + "INSERT A PASSWORD" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->")
+                        Font.Color.RED + "\n[!]" + Font.Color.WHITE + "INSERT A PASSWORD" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->")
                 else:
                     Parser.set("Smtp","Password",passw)
                     with open(nomefile, 'w') as configfile:
@@ -76,17 +76,17 @@ class Config:
     @staticmethod
     def modify_destination():
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR DESTINATION-EMAIL?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR DESTINATION-EMAIL?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             os.chdir(dest)
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 destination = str(input(
-                    Font.Color.WHITE + "\nINSERT YOUR DESTINATION-MAIL" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + "\nINSERT YOUR DESTINATION-MAIL" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
                 while destination == "":
                    destination = str(input(
-                    Font.Color.WHITE + "\nINSERT YOUR DESTINATION-MAIL" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + "\nINSERT YOUR DESTINATION-MAIL" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
                 else:
                     Parser.set("Smtp","Destination",destination)
                     with open(nomefile, 'w') as configfile:
@@ -101,17 +101,17 @@ class Config:
     @staticmethod
     def modify_port():
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR SERVER-PORT?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR SERVER-PORT?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             os.chdir(dest)
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 port = str(input(
-                    Font.Color.WHITE + "\nINSERT YOUR SERVER-PORT" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + "\nINSERT YOUR SERVER-PORT" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
                 while port == "":
                    port = str(input(
-                    Font.Color.WHITE + "\nINSERT YOUR SERVER-PORT" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + "\nINSERT YOUR SERVER-PORT" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
                 else:
                     Parser.set("Smtp","Destination",port)
                     with open(nomefile, 'w') as configfile:
@@ -126,17 +126,17 @@ class Config:
     @staticmethod
     def modify_server():
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR SMTP-SERVER?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR SMTP-SERVER?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             os.chdir(dest)
             if os.path.isfile:
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 server = str(input(
-                        Font.Color.WHITE + "\nINSERT YOUR SMTP-SERVER" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + "\nINSERT YOUR SMTP-SERVER" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
                 while server == "":
                     server = str(input(
-                    Font.Color.WHITE + "\nINSERT YOUR SMTP-SERVER" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + "\nINSERT YOUR SMTP-SERVER" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
                 else:
                     Parser.set("Smtp","Server",server)
                     with open(nomefile, 'w') as configfile:
@@ -150,17 +150,17 @@ class Config:
     @staticmethod
     def modify_path():
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR UPDATE-PATH?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR UPDATE-PATH?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             os.chdir(dest)
             if os.path.isfile:
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 path = str(input(
-                        Font.Color.WHITE + "\nINSERT YOUR UPDATE-PATH" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + "\nINSERT YOUR UPDATE-PATH" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
                 while path == "":
                     path = str(input(
-                        Font.Color.WHITE + "\nINSERT YOUR UPDATE-PATH" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + "\nINSERT YOUR UPDATE-PATH" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
                 else:
                     Parser.set("Settings","Path",path)
                     with open(nomefile, 'w') as configfile:
@@ -175,17 +175,17 @@ class Config:
     @staticmethod
     def modify_update_pass():
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR UPDATE-PASSWORD?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + "ARE YOU SURE TO MODIFY YOUR UPDATE-PASSWORD?(1)YES(2)NO" + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             os.chdir(dest)
             if os.path.isfile :
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 passw = getpass.getpass(
-                        Font.Color.WHITE + "\nINSERT YOUR DESTINATION-MAIL" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->")
+                        Font.Color.WHITE + "\nINSERT YOUR DESTINATION-MAIL" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->")
                 while passw == "":
                     destination = str(input(
-                        Font.Color.WHITE + "\nINSERT YOUR DESTINATION-MAIL" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + "\nINSERT YOUR DESTINATION-MAIL" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
                 else:
                     Parser.set("Settings","Password",passw)
                     with open(nomefile, 'w') as configfile:
