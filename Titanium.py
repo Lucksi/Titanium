@@ -97,11 +97,11 @@ def agree():
     agree_banner()
     agreement = str(input(
         Font.Color.BLUE + "THIS TOOL DOESN'T PROMOTE ANT TYPE OF ILLEGAL ACTIVITY ITS MADE ONLY FOR EDUCATIONAL PURPOSE AND TESTING,\nI DO NOT TAKE ANY RESPONSABILITY FOR ANY DAMAGE YOU WILL CAUSE.BY USING THIS TOOL YOU ACCEPT THIS CONDITION\nAND REMEMBER WHITH GREAT POWERS COMES GREAT RESPONSBILITES:)" + Font.Color.RED + "\nYES NO" + Font.Color.GREEN + "\n\n[*TITANIUM*]" + Font.Color.WHITE + "-->"))
-    if agreement == "yes" or agree == "YES":
+    if agreement == "yes" or agreement == "YES":
         print(Font.Color.WHITE + "\nTHANK YOU GOOD HACKING:)")
         inp = input("\nPRESS ENTER TO USE TITANIUM")
         os.system("cls" if os.name == "nt" else "clear")
-    elif agreement == "no" or agree == "NO":
+    elif agreement == "no" or agreement == "NO":
         print(Font.Color.RED + "YOU MUST ACCEPT THE AGREEMENT TO RUN THIS SCRIPT")
         exit()
     else:
